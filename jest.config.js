@@ -5,7 +5,7 @@ module.exports = {
   testPathIgnorePatterns: ["/playwright/", "/node_modules/"],
   setupFilesAfterEnv: ["<rootDir>/test/setup-after-env.ts"],
   moduleNameMapper: {
-    // Force module uuid to resolve with the CJS entry point, because Jest does not support package.json.exports. See https://github.com/uuidjs/uuid/issues/451
+    // This is due to Jest supporting exports, and those modules always serving ESM when Jest provides browser and require conditions. See https://jestjs.io/docs/28.x/upgrading-to-jest28#packagejson-exports
     "@remix-run/web-fetch": require.resolve("@remix-run/web-fetch"),
     "@remix-run/web-blob": require.resolve("@remix-run/web-blob"),
     "@remix-run/web-stream": require.resolve("@remix-run/web-stream"),
