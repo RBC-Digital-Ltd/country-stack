@@ -1,9 +1,8 @@
 {
   "git": {
-    "commitMessage": "v${version}",
     "changelog": "yarn auto-changelog --stdout --commit-limit false --unreleased --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs",
     "requireBranch": "master",
-    "commit": false
+    "commitArgs": "--amend --no-edit"
   },
   "github": {
     "release": false
