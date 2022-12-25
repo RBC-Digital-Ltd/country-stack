@@ -10,6 +10,9 @@
   "github": {
     "release": false
   },
+  "hooks": {
+    "after:bump": "yarn auto-changelog -p --commit-limit false"
+  },
   "npm": {
     "publish": false
   }
