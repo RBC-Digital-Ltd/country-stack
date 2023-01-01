@@ -5,7 +5,7 @@
     "requireBranch": "master",
     "addUntrackedFiles": true,
     "commitArgs": "--amend --no-edit",
-    "pushArgs": "--follow-tags --force-with-lease"
+    "push": false
   },
   "github": {
     "release": false
