@@ -7,7 +7,7 @@
     "commitArgs": "--amend --no-edit",
     "pushArgs": "--follow-tags --force-with-lease",
     "push": false,
-    "commit": false
+    "commit": true
   },
   "github": {
     "release": false
